@@ -71,10 +71,10 @@
 
         SYM {
             bindings = <
-&kp TILDE          &kp LBRC   &kp AMPS    &kp STAR     &kp LPAR   &kp RBRC  &trans  &trans     &trans     &trans    &trans    &none
-&kp LEFT_BRACKET   &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp LGUI  &none
-&kp RIGHT_BRACKET  &kp MINUS  &kp EXCL    &kp AT       &kp HASH   &kp PIPE  &trans  &trans     &trans     &trans    &trans    &none
-                              &kp UNDER   &kp RPAR     &trans     &trans    &trans  &trans     &trans
+&kp TILDE          &kp LBRC   &kp AMPS    &kp STAR     &kp LPAR   &kp RBRC  &none   &none      &none      &none     &none     &none
+&kp LEFT_BRACKET   &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp LGUI  &none
+&kp RIGHT_BRACKET  &kp MINUS  &kp EXCL    &kp AT       &kp HASH   &kp PIPE  &none   &none      &none      &none     &none     &none
+                              &kp UNDER   &kp RPAR     &trans     &trans    &trans  &none      &none
                                                        &trans     &trans    &trans
                                                        &trans     &trans    &trans
             >;

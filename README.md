@@ -13,7 +13,7 @@ I will update the README as things progress.
 
 
 
-I designed the keyboard with Cosmos Keyboard Generator.
+I designed the keyboard with Cosmos Keyboard Generator. Thank you ryanis.cool
 
 skree.us will be printing and assembling the keyboard for me.
 

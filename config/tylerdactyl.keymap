@@ -2,7 +2,6 @@
   keymap {
     com#include <behaviors.dtsi>
 
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -24,6 +23,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
                 &bhm LCTRL A &bhm LGUI S &bhm LALT D &bhm LSHIFT F
@@ -38,12 +38,12 @@
 
         BASE {
             bindings = <
-&kp LC(W)         &kp Q           &kp W       &kp E          &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O            &kp P                    &kp LG(L)
-&none             &mt LEFT_WIN A  &mt LALT S  &mt LCTRL D    &mt LSHFT F  &kp G            &kp H      &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &trans
-&kp LG(LC(LEFT))  &kp Z           &kp X       &kp C          &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp PERIOD       &kp SLASH                &kp LG(LC(RIGHT))
-                                  &kp HOME    &kp PAGE_DOWN  &lt 5 ENTER  &lt 4 BACKSPACE  &lt 3 DEL  &kp END      &kp PAGE_UP
-                                                             &kp ESCAPE   &lt 1 SPACE      &lt 2 TAB
-                                                             &mkp RCLK    &mkp LCLK        &mkp MCLK
+&kp LC(W)         &kp Q        &kp W            &kp E          &kp R         &kp T            &kp Y      &kp U               &kp I         &kp O             &kp P                &kp LG(L)
+&none             &bhm LWIN A  &bhm LEFT_ALT S  &bhm LCTRL D   &bhm LSHFT F  &kp G            &kp H      &bhm RIGHT_SHIFT J  &bhm RCTRL K  &bhm RIGHT_ALT L  &bhm RWIN SEMICOLON  &trans
+&kp LG(LC(LEFT))  &kp Z        &kp X            &kp C          &kp V         &kp B            &kp N      &kp M               &kp COMMA     &kp PERIOD        &kp SLASH            &kp LG(LC(RIGHT))
+                               &kp HOME         &kp PAGE_DOWN  &lt 5 ENTER   &lt 4 BACKSPACE  &lt 3 DEL  &kp END             &kp PAGE_UP
+                                                               &kp ESCAPE    &lt 1 SPACE      &lt 2 TAB
+                                                               &mkp RCLK     &mkp LCLK        &mkp MCLK
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;

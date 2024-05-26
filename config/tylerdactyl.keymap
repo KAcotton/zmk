@@ -12,9 +12,8 @@
 
 
 
-//Personal Includes
-#include <settings.dtsi>
-#include <behaviors_homerow_mods>
+
+
 
 
 / {

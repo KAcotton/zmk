@@ -27,3 +27,8 @@ https://ryanis.cool/cosmos/beta#cf:ChYIBBAGWAAYBCAFKNcBMM0BUABAAEgAEhAIhAcYxgogo
 
 The keymap layout is a modified version of the MIRYOKU layout.  I made some changes because I have more keys available and to suit my work flow.  I am a Quality Control Manager for major construction projects and work with construction drawings in BlueBeam Revu quite a lot.  I also manage our database of drawings and materials as construction progresses.
 
+I designed the keymap layout with the help of https://nickcoutsos.github.io/keymap-editor/
+
+Thank you Nick.
+
+As the keyboard build progresses, SKREE, will update me with the actual keymaps from the firmware he compiles, as of now, I built the .json with https://nickcoutsos.github.io/keymap-layout-tools/  Again, Thank you Nick.

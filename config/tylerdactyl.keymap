@@ -11,13 +11,15 @@
 
 / {
     behaviors {
-        bhm: balanced_homerow_mods {
+        bRhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <125>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 43 44 45 46 47 48 3>;
         };
     };
 
@@ -44,12 +46,12 @@
 
         BASE {
             bindings = <
-&kp LC(W)         &kp Q        &kp W            &kp E          &kp R         &kp T            &kp Y      &kp U               &kp I         &kp O             &kp P                &kp LG(L)
-&none             &bhm LWIN A  &bhm LEFT_ALT S  &bhm LCTRL D   &bhm LSHFT F  &kp G            &kp H      &bhm RIGHT_SHIFT J  &bhm RCTRL K  &bhm RIGHT_ALT L  &bhm RWIN SEMICOLON  &trans
-&kp LG(LC(LEFT))  &kp Z        &kp X            &kp C          &kp V         &kp B            &kp N      &kp M               &kp COMMA     &kp PERIOD        &kp SLASH            &kp LG(LC(RIGHT))
-                               &kp HOME         &kp PAGE_DOWN  &lt 5 ENTER   &lt 4 BACKSPACE  &lt 3 DEL  &kp END             &kp PAGE_UP
-                                                               &kp ESCAPE    &lt 1 SPACE      &lt 2 TAB
-                                                               &mkp RCLK     &mkp LCLK        &mkp MCLK
+&kp LC(W)         &kp Q         &kp W             &kp E          &kp R          &kp T            &kp Y      &kp U                &kp I          &kp O              &kp P                 &kp LG(L)
+&none             &bRhm LWIN A  &bRhm LEFT_ALT S  &bRhm LCTRL D  &bRhm LSHFT F  &kp G            &kp H      &bRhm RIGHT_SHIFT J  &bRhm RCTRL K  &bRhm RIGHT_ALT L  &bRhm RWIN SEMICOLON  &trans
+&kp LG(LC(LEFT))  &kp Z         &kp X             &kp C          &kp V          &kp B            &kp N      &kp M                &kp COMMA      &kp PERIOD         &kp SLASH             &kp LG(LC(RIGHT))
+                                &kp HOME          &kp PAGE_DOWN  &lt 5 ENTER    &lt 4 BACKSPACE  &lt 3 DEL  &kp END              &kp PAGE_UP
+                                                                 &kp ESCAPE     &lt 1 SPACE      &lt 2 TAB
+                                                                 &mkp RCLK      &mkp LCLK        &mkp MCLK
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;

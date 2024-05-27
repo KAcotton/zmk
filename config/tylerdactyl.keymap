@@ -109,6 +109,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            label = "SYM";
         };
 
         MEDIA {
@@ -122,6 +123,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            label = "MEDIA";
         };
     };
 };

@@ -56,12 +56,12 @@
 
             BASE {
                 bindings = <
-&kp LC(W)         &kp Q         &kp W             &kp E          &kp R          &kp T            &kp Y      &kp U          &kp I          &kp O              &kp P                 &kp LG(L)
-&none             &bRhm LWIN A  &bRhm LEFT_ALT S  &bRhm LCTRL D  &bRhm LSHFT F  &kp G            &kp H      &bLhm RSHFT J  &bLhm RCTRL K  &bLhm RIGHT_ALT L  &bLhm RWIN SEMICOLON  &trans
-&kp LG(LC(LEFT))  &kp Z         &kp X             &kp C          &kp V          &kp B            &kp N      &kp M          &kp COMMA      &kp PERIOD         &kp SLASH             &kp LG(LC(RIGHT))
-                                &kp HOME          &kp PAGE_DOWN  &lt 5 ENTER    &lt 4 SPACE      &lt 3 DEL  &kp END        &kp PAGE_UP
-                                                                 &kp ESCAPE     &lt 1 BACKSPACE  &lt 2 TAB
-                                                                 &mkp RCLK      &mkp LCLK        &mkp MCLK
+&kp LC(W)         &kp Q         &kp W             &kp E          &kp R          &kp T        &kp Y      &kp U          &kp I          &kp O              &kp P                 &kp LG(L)
+&none             &bRhm LWIN A  &bRhm LEFT_ALT S  &bRhm LCTRL D  &bRhm LSHFT F  &kp G        &kp H      &bLhm RSHFT J  &bLhm RCTRL K  &bLhm RIGHT_ALT L  &bLhm RWIN SEMICOLON  &trans
+&kp LG(LC(LEFT))  &kp Z         &kp X             &kp C          &kp V          &kp B        &kp N      &kp M          &kp COMMA      &kp PERIOD         &kp SLASH             &kp LG(LC(RIGHT))
+                                &kp HOME          &kp PAGE_DOWN  &lt 5 DEL      &lt 4 SPACE  &lt 3 DEL  &kp END        &kp PAGE_UP
+                                                                 &kp ESCAPE     &lt 1 ENTER  &lt 2 TAB
+                                                                 &mkp RCLK      &mkp LCLK    &mkp MCLK
                 >;
 
                 sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;

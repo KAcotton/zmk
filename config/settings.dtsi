@@ -5,7 +5,7 @@
 /*
  * Caps Word Settings
  */
-&caps_word {
+    &caps_word {
     // Allow caps word to continue even when minus or underscore
     // are pressed.
     // Also prevent mod presses from cancelling caps word.

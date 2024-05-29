@@ -32,14 +32,5 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <HM_QUICK_TAP>;
         };  
-
-            &caps_word {
-            continue-list = <
-            UNDERSCORE MINUS
-            LCTRL LALT LGUI LSHFT
-            RCTRL RALT RGUI RSHFT
-            BACKSPACE
-            >;
-        };    
     }
 }

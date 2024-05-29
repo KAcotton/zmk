@@ -26,7 +26,7 @@
 
           
 
-            lt: layer_tap {
+            &lt: layer_tap {
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <HM_QUICK_TAP>;

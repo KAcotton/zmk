@@ -1,10 +1,13 @@
-#define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 150
-#define HM_QUICK_TAP 125
-
-/ {
-
+    
+    
+    
+    
+/ {    
+    #define HM_TAPPING_TERM 300
+    #define HM_TAPPING_TERM_FAST 200
+    #define HM_PRIOR_IDLE 150
+    #define HM_QUICK_TAP 125
+    
        behaviors{
             bRhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 

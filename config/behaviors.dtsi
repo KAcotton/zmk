@@ -2,7 +2,8 @@
     #define HM_TAPPING_TERM_FAST 200
     #define HM_PRIOR_IDLE 150
     #define HM_QUICK_TAP 125
-    /{
+
+    
     
         behaviors {
         compatible = "zmk,keymap";
@@ -39,4 +40,4 @@
         };
     };
     
-};   
+  

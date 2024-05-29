@@ -10,8 +10,8 @@ define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
 #define HM_QUICK_TAP 125
-
-       behaviors{
+/{
+     behaviors{
             &bLhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 
             #binding-cells = <2>; 
@@ -38,6 +38,7 @@ define HM_TAPPING_TERM 300
             quick-tap-ms = <HM_QUICK_TAP>;
         };  
     }
+}
 
     / {
         keymap {

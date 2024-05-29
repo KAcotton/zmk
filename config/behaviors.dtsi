@@ -3,7 +3,8 @@
     
     
 / {   
-    compatible = "zmk, keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
     #define HM_TAPPING_TERM 300
     #define HM_TAPPING_TERM_FAST 200
@@ -11,7 +12,7 @@
     #define HM_QUICK_TAP 125
     
        behaviors{
-            bRhm: right_balanced_homerow_mods {
+            &bhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 
             #binding-cells = <2>; 
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
@@ -21,15 +22,7 @@
             bindings = <&kp>, <&kp>;
             };
 
-            bLhm: left_balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
-            quick-tap-ms = <HM_QUICK_TAP>;
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-            };
+          
 
             &lt {
             flavor = "balanced";

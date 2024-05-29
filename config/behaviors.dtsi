@@ -3,8 +3,7 @@
     
     
 / {   
-    keymap {
-        compatible = "zmk,keymap";
+   
 
     #define HM_TAPPING_TERM 300
     #define HM_TAPPING_TERM_FAST 200
@@ -30,5 +29,5 @@
             quick-tap-ms = <HM_QUICK_TAP>;
             };  
         };
-    };
+    
 };

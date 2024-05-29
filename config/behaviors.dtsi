@@ -7,7 +7,7 @@
 / {
 
        behaviors{
-            &bLhm: right_balanced_homerow_mods {
+            bLhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 
             #binding-cells = <2>; 
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
@@ -17,7 +17,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-            &bRhm: left_balanced_homerow_mods {
+            bRhm: left_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
@@ -27,7 +27,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-            &lt {
+            lt {
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <HM_QUICK_TAP>;

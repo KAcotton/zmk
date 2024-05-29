@@ -5,7 +5,6 @@
 #define HM_QUICK_TAP 125
 
 / {
-    behaviors {
             &bLhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 
             #binding-cells = <2>; 
@@ -35,7 +34,7 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <HM_QUICK_TAP>;
         };  
-        
+
             &caps_word {
             continue-list = <
             UNDERSCORE MINUS
@@ -44,7 +43,4 @@
             BACKSPACE
             >;
         };    
-
-
-    }
 }

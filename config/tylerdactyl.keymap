@@ -1,6 +1,6 @@
 / 
   keymap {
-    com
+    compatible = "zmk,keymap";
     
 
 #include <behaviors.dtsi>

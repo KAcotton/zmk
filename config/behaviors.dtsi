@@ -2,7 +2,9 @@
     
     
     
-/ {    
+/ {   
+    compatible = "zmk, keymap";
+
     #define HM_TAPPING_TERM 300
     #define HM_TAPPING_TERM_FAST 200
     #define HM_PRIOR_IDLE 150
@@ -17,7 +19,7 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>; 
             flavor = "balanced"; 
             bindings = <&kp>, <&kp>;
-        };
+            };
 
             bLhm: left_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -27,12 +29,12 @@
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
+            };
 
-            lt {
+            &lt {
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <HM_QUICK_TAP>;
-        };  
+            };  
     };
 };

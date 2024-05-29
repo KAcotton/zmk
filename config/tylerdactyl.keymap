@@ -14,7 +14,7 @@
     #define HM_QUICK_TAP 125
     
        behaviors{
-            bhm: right_balanced_homerow_mods {
+            bRhm: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap"; 
             #binding-cells = <2>; 
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
@@ -24,7 +24,15 @@
             bindings = <&kp>, <&kp>;
             };
 
-          
+            bLhm: right_balanced_homerow_mods {
+                compatible = "zmk,behavior-hold-tap"; 
+                #binding-cells = <2>; 
+                tapping-term-ms = <HM_TAPPING_TERM_FAST>;    // <---[[moderate duration]]
+                quick-tap-ms = <HM_QUICK_TAP>; 
+                require-prior-idle-ms = <HM_PRIOR_IDLE>; 
+                flavor = "balanced"; 
+                bindings = <&kp>, <&kp>;
+                };
 
             &lt: layer_tap {
             flavor = "balanced";
